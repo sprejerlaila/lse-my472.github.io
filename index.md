@@ -97,6 +97,9 @@ at the outset of any data analysis or data science project. The course will be
 concluded with the discussion of performance issues in computation with the
 particular focus on parallel computing.
 
+### Resources
+
+This class is supported by [DataCamp](https://www.datacamp.com/), the most intuitive learning platform for data science.  Learn R, Python and SQL the way you learn best through a combination of short expert videos and hands-on-the-keyboard exercises. Take over 100+ courses by expert instructors on topics such as importing data, data visualization or machine learning and learn faster through immediate and personalised feedback on every exercise.
 
 ### Assessment
 
@@ -176,7 +179,7 @@ This week moves beyond the rectangular format common in statistical datasets, mo
 
 ##### [Lab: Reshaping data in R**]
 
-##### Assignment 1: Data cleaning in R. Deadline: October 18.
+##### Assignment 1: Data cleaning in R. Deadline: October 18.   
 
 
 #### 3. Cloud computing
@@ -184,8 +187,8 @@ This week moves beyond the rectangular format common in statistical datasets, mo
 In this week, we focus on the setup of computation environments on the Internet. We will introduce the cloud computing concepts and learn why the big shift to the cloud computing is occurring in the industry and how it is relevant to us as data scientists. In the lab, we will have an introduction to the cloud environment setup using Amazon Web Services. We will sign up an account, launch a cloud computing environment, create a webpage, and set up a statistical computing environment.
 
 ##### Resources
-- [Lecture slides](week02/MY472-week03.pdf)
-- [Class slides](week02/MY472-AWS-Lab3.pdf)
+- [Lecture slides](week03/MY472-week03-cloud.html)
+- [Class slides](week03/MY472-week03-AWS-Lab3.pdf)
 
 ##### Required reading
 * Rajaraman, V. 2014. "[Cloud Computing.](https://www.ias.ac.in/article/fulltext/reso/019/03/0242-0258)" Resonance 19(3): 242–58.
@@ -197,7 +200,8 @@ In this week, we focus on the setup of computation environments on the Internet.
 * Botta, Alessio, Walter De Donato, Valerio Persico, and Antonio Pescapé. 2016. "[Integration of Cloud Computing and Internet of Things: A Survey.](http://iranarze.ir/wp-content/uploads/2017/03/6229-English-IranArze.pdf)" Future Generation Computer Systems 56: 684–700.
 
 ##### Lab: Working with AWS
-* Setup an AWS account
+
+* Setup an AWS account (link from Moodle for AWS Educate free account)
 * Secure the account
 * Configure EC2 instance
 * Work with EC2 instance
@@ -214,8 +218,9 @@ In this week, we focus on the setup of computation environments on the Internet.
 From week 4 to week 7, we will learn how to get the data from the Internet. This week introduces the basics, including markup languages (HTML, XML, and Markdown) and other common data formats such as JSON (Javascript Object Notation).  We also cover basic web scraping, to turn web data into text or numbers.  We will also cover the client-server model, and how machines and humans transmit data over networks and to and from databases.
 
 ##### Resources
-- [Lecture slides](week04/MY472-week04.pdf)
-- [Class slides](week04/MY472-AWS-Lab3.pdf)
+- [Lecture slides](week04/MY472-week04-HTML.pdf)
+- [Example 1: scraping tables](week04/01-scraping-tables.Rmd)  
+- [Example 2: scraping unstructured data](week04/02-scraping-unstructured-data.Rmd)
 
 ##### Required Reading
 * Lazer, David, and Jason Radford. 2017. “[Data Ex Machina: Introduction to Big Data.](https://doi.org/10.1146/annurev-soc-060116-053457)” _Annual Review of Sociology_ 43(1): 19–39.
@@ -228,12 +233,11 @@ From week 4 to week 7, we will learn how to get the data from the Internet. This
 * Duckett, Jon. 2011. _HTML and CSS: Design and Build Websites_.  New York: Wiley.
 
 ##### Lab: Web scraping 1
-- Scraping tables
-- Scraping unstructured data
-* [Attendance Survey](https://lse.eu.qualtrics.com/jfe/form/SV_5aOLpBO9PluOdmZ)
+- Scraping tables  
+- Scraping unstructured data  
 
 ##### Assignment 2: Webscraping
-* [Link to the GitHub classroom]().  Deadline: November 1.
+* [Link to the GitHub classroom]().  Deadline: Friday, November 1.
 
 
 #### 5. Using data from the Internet
