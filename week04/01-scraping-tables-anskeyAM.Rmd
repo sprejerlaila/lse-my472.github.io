@@ -73,8 +73,13 @@ ggplot(data_pop_melt) + aes(x = year, y = value, group = variable, colour = vari
 
 When there are multiple tables on the website, scraping them becomes a bit more complicated. Let's work through a common case scenario: scraping a table from Wikipedia with a list of the most populated cities in the United States.
 
+<<<<<<< HEAD:week04/01-scraping-tables.Rmd
+```{r, eval = FALSE}
+url <- "https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population"
+=======
 ```{r}
 url <- 'https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population'
+>>>>>>> 22a50d5cbf8e5d3a0cc1ed58986b6796351d6fe5:week04/01-scraping-tables-anskeyAM.Rmd
 html <- read_html(url)
 tables <- html_table(html, fill=TRUE)
 length(tables)
@@ -103,24 +108,38 @@ As in the previous case, we still need to clean the data before we can use it. F
 
 We'll use regular expressions to remove endnotes and commas in the population numbers, and clean the variable names. (We'll come back to this later in the course.)
 
+<<<<<<< HEAD:week04/01-scraping-tables.Rmd
+```{r, eval = FALSE}
+pop$city_name <- 
+pop$population <- 
+pop$population <- 
+pop$rank <- 
+pop <- pop[, c("rank", "population", "city_name")]
+=======
 ```{r}
 data_pop$city_name <- gsub('\\[.*\\]', '', data_pop$City)
 data_pop$population <- data_pop[,"2017estimate"]
 data_pop$population <- as.numeric(gsub(",", "", data_pop$population))
 data_pop$rank <- data_pop[,"2017rank"]
 data_pop <- data_pop[,c("rank", "population", "city_name")]
+>>>>>>> 22a50d5cbf8e5d3a0cc1ed58986b6796351d6fe5:week04/01-scraping-tables-anskeyAM.Rmd
 ```
 
 Now we're ready to generate the figure:
 
 ```{r}
 library(ggplot2)
+<<<<<<< HEAD:week04/01-scraping-tables.Rmd
+p <- ggplot(pop, aes(x = rank, y = population, label = city_name))
+pq <- p + geom_point() + ...
+=======
 p <- ggplot(data_pop, aes(x=rank, y=population, label=city_name))
 pq <- p + geom_point() + geom_text(hjust=-.1, size=3) +
 	scale_x_log10("log(rank)") + 
   scale_y_log10("log(population)", labels=scales::comma) +
   theme_minimal()
 pq
+>>>>>>> 22a50d5cbf8e5d3a0cc1ed58986b6796351d6fe5:week04/01-scraping-tables-anskeyAM.Rmd
 ```
 
 We can also check if this distribution follows Zipf's law estimating a log-log regression.
