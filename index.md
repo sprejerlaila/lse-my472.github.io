@@ -245,7 +245,8 @@ From week 4 to week 7, we will learn how to get the data from the Internet. This
 Continuing from the material covered in Week 4, we will learn the advanced topics in scraping the web. The topics include the scraping documents in XML (such as RSS), scraping websites beyond the authentication, and websites with non-static components.
 
 ##### Resources
-- [Lecture slides](week05/MY472-week05-internetdata.pdf)
+- [Lecture slides](week05/MY472-week05-internetdata.html)
+- [Example of vectors and list operations in R](vectors-and-lists.R)
 
 ##### Required Reading
 * Sai Swapna Gollapudi. 2018. [_Learn Web Scraping and Browser Automation Using RSelenium in R_](https://analyticsprofile.com/business-analytics/learn-web-scraping-and-browser-automation-using-rselenium-in-r/).
@@ -266,7 +267,8 @@ Continuing from the material covered in Week 4, we will learn the advanced topic
 #### 7. Working with APIs
 
 ##### Resources
-- [Lecture slides](week07/MY472-week07.pdf)
+- [Lecture slides](week07/MY472-week07-APIs.pdf)
+- [Examples](https://github.com/lse-my472/lse-my472.github.io/tree/master/week07)
 
 How to work with Application Programming Interfaces (APIs), which offer developers and researchers access to data in a structured format. Our running examples will be the New York Times API and the Twitter API.
 
@@ -281,7 +283,7 @@ How to work with Application Programming Interfaces (APIs), which offer develope
 - Interacting with Twitter's REST and Streaming API
 
 ##### Assignment 3: APIs
-- [Link to GitHub classroom](). Deadline: November 26.
+- TBC
 
 
 #### 8. Textual data
